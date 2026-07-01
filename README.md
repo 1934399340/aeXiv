@@ -69,12 +69,26 @@
 
 | 组件 | 技术 | 说明 |
 |------|------|------|
-| 前端 | Streamlit | 快速构建Web界面 |
-| 向量索引 | FAISS | 高效相似度检索 |
-| 嵌入模型 | BGE-large-zh-v1.5 | 中文语义理解 |
-| 大语言模型 | 小米mimo-v2.5 | 论文问答与翻译 |
-| 数据源 | ArXiv API | 学术论文数据库 |
+| 前端框架 | Streamlit | 快速构建Web应用界面 |
+| 向量数据库 | FAISS | Facebook开源的高效向量检索库 |
+| 嵌入模型 | BGE-large-zh-v1.5 | 中文语义理解，1024维向量 |
+| 大语言模型 | LLM API | 论文问答与智能翻译 |
+| 数据源 | ArXiv API | 学术论文预印本平台 |
 | 编程语言 | Python 3.10+ | 后端开发 |
+| 文档解析 | PyPDF2 / python-docx | PDF和Word文档解析 |
+| 文本处理 | NLTK / spaCy | 自然语言处理 |
+| 配置管理 | python-dotenv | 环境变量管理 |
+
+### 核心依赖
+```
+chromadb>=0.4.0        # 向量数据库
+faiss-cpu>=1.7.0       # 向量索引
+sentence-transformers>=2.2.0  # 嵌入模型
+streamlit>=1.20.0      # Web界面
+openai>=1.0.0          # LLM API调用
+PyPDF2>=3.0.0          # PDF解析
+python-docx>=0.8.11    # Word解析
+```
 
 ## 项目结构
 
